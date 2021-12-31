@@ -7,7 +7,7 @@
 }
 
 .full_body{
-    background-image: linear-gradient(to right top, rgb(59, 167, 255),rgb(42, 255, 166),rgb(44, 255, 90),rgb(123, 255, 35));
+    background-image: linear-gradient(to right top, rgb(59, 209, 255),rgb(44, 255, 192),rgb(59, 255, 147));
     height: 100vh;
 }
 
@@ -23,7 +23,8 @@
     margin-top: 10vh;
     text-align: left;
     padding-left: 5vw;
-    width: 70vw;
+    width: 60vw;
+    height: 60vh;
 }
 
 .right_panel{
@@ -32,6 +33,7 @@
     text-align: left;
     padding-right: 5vw;
     width: 30vw;
+    height: 60vh;
 }
 
 .page_buttons{
@@ -39,7 +41,7 @@
     font-weight: 110;
     color: rgb(255, 255, 255);
     background-color: rgb(255, 14, 14);
-    margin: 10px;
+    margin: 10px 0px;
     padding : 6px;
     border: none;
     border-radius: 2px;
@@ -50,7 +52,6 @@
     background-color: rgb(255, 51, 0);
     transition: 0.2s ease-out;
     transform:translateY(-2px);
-    box-shadow: 0px 0px 2px 2px white;
 }
 
 .page_buttons:active{
@@ -59,9 +60,13 @@
 }
 
 .expenses_table{
+
+    border-collapse:separate;
+    border-spacing:10px 10px;
+
     color: white;
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.548);
     width: fit-content;
     padding: 5px;
     border-radius: 5px;
@@ -75,18 +80,70 @@ p{
 
 h3{
     font-size: 25px;
+    margin: 10px 0px;
     font-weight: 600;
     color: white;
 }
 
 .categories_panel{
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.548);
     width: fit-content;
     padding: 5px;
     border-radius: 5px;
 }
 
 .categories_panel p{
-    border-bottom: 1px solid white;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
     margin-top: 15px;
+}
+
+.add_expense_panel{
+    display: none;
+    color: white;
+    width: fit-content;
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.678);
+    box-shadow: 1px 4px 10px 2px black;
+    border-radius: 5px;
+}
+
+.add_category_panel{
+    display: none;
+    width: fit-content;
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.678);
+    box-shadow: 1px 4px 10px 2px black;
+    border-radius: 5px;
+}
+
+.form_labels{
+    margin: 20px 10px;
+}
+
+.form_labels label{
+    margin-right: 30px;
+}
+
+.form_labels input, select{
+    float: right;
+}
+
+.inputF,.inputF1{
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
+    font-weight: 800;
+    padding: 3px 5px;
+    margin: 0px 5px;
+}
+
+.inputF:focus{
+    background-color: rgba(34, 34, 34, 0.336);
 }
